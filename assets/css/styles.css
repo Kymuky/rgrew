@@ -126,3 +126,12 @@ body.modal-open{overflow:hidden;touch-action:none;}
   .navline.is-open{display:flex}
   .navline a{width:100%}
 }
+
+/* --- Employee modal mobile layout fix --- */
+@media(max-width:560px){
+  .modal{max-width:96vw;border-radius:16px}
+  .modal header{flex-wrap:wrap;gap:8px}
+  .kv{grid-template-columns:1fr}
+  .kv .key{margin-top:10px;font-weight:600}
+}
+.kv > div{overflow-wrap:anywhere;word-break:break-word}
