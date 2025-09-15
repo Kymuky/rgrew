@@ -6,18 +6,11 @@ async function loadNews(){
       if(!res.ok) throw new Error('HTTP '+res.status);
       return await res.json();
     }catch(e){
-      // Fallback for file://
-      console.warn('fetch(data/news.json) failed, using inline NEWS_DATA. Reason:', e);
-      try{
-        const inline = document.getElementById('news-data');
-        if(inline){ return JSON.parse(inline.textContent); }
-      }catch(parseErr){
-        console.error('Inline news-data parse error', parseErr);
-      }
+      const inline = document.getElementById('news-data');
+      if(inline){ try{return JSON.parse(inline.textContent);}catch(_){} }
       return [];
     }
   }
-
   try{
     const items = await fetchOrFallback();
     const grid = document.getElementById('news-grid');
@@ -42,7 +35,6 @@ async function loadNews(){
           <a class="btn" href="javascript:void(0)" onclick="openModal('news${idx}')">Подробнее</a>
         </div>`;
       grid.appendChild(card);
-
       const modal = document.createElement('div');
       modal.className = 'modal-backdrop'; modal.id = `news${idx}`;
       modal.innerHTML = `

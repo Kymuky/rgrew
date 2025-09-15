@@ -6,13 +6,8 @@ async function loadEmployees(){
       if(!res.ok) throw new Error('HTTP '+res.status);
       return await res.json();
     }catch(e){
-      console.warn('fetch(data/employees.json) failed, using inline EMPLOYEES_DATA. Reason:', e);
-      try{
-        const inline = document.getElementById('employees-data');
-        if(inline){ return JSON.parse(inline.textContent); }
-      }catch(parseErr){
-        console.error('Inline employees-data parse error', parseErr);
-      }
+      const inline = document.getElementById('employees-data');
+      if(inline){ try{return JSON.parse(inline.textContent);}catch(_){} }
       return [];
     }
   }

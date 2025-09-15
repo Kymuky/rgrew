@@ -6,10 +6,9 @@
   <title>Сотрудники — Отдел №27</title>
   <link rel="icon" href="assets/img/ui/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="description" content="Официально-стилизованный учебный макет сайта «Отдел №27».">
 </head>
 <body>
-  
+
   <header class="header gov">
     <div class="container">
       <div class="topbar">
@@ -26,10 +25,11 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/></svg>
             <input type="search" placeholder="Поиск…" aria-label="Поиск">
           </div>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" onclick="toggleNav()">☰ Меню</button>
           <a class="btn secondary" href="services.html">Обратная связь</a>
         </div>
       </div>
-      <nav class="navline">
+      <nav id="mainnav" class="navline">
         <a href="index.html">Главная</a>
         <a href="about.html">Об отделе</a>
         <a href="news.html">Новости</a>
@@ -48,104 +48,7 @@
     <div id="emp-grid" class="grid cols-4"></div>
     <div id="emp-modals"></div>
   </div>
-  <script id="employees-data" type="application/json">[
-  {
-    "full_name": "Фролова Александра Сергеевна",
-    "position": "Ведущий специалист-эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "frolova.aleksandra94@gov.ru",
-    "phone": "+7 (927) 071-17-72",
-    "birthdate": "15.04.1994",
-    "id_number": "142-217",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/frolova.jpg",
-    "id_card_img": "assets/img/employees/frolova_id.jpg"
-  },
-  {
-    "full_name": "Купалов Виктор Николаевич",
-    "position": "Специалист по защите персональных данных",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "kupalov.viktor@gov.ru",
-    "phone": "+7 (927) 071-17-71",
-    "birthdate": "12.02.1990",
-    "id_number": "ВН-740",
-    "duties": "Профилактика и анализ инцидентов, связанных с утечкой персональных данных; консультирование граждан и организаций.",
-    "photo": "assets/img/employees/kupalov.jpg",
-    "id_card_img": "assets/img/employees/kupalov_id.jpg"
-  },
-  {
-    "full_name": "Сотрудник 1",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee1@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "11.02.1990",
-    "id_number": "101-201",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  },
-  {
-    "full_name": "Сотрудник 2",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee2@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "12.03.1990",
-    "id_number": "102-202",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  },
-  {
-    "full_name": "Сотрудник 3",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee3@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "13.04.1990",
-    "id_number": "103-203",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  },
-  {
-    "full_name": "Сотрудник 4",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee4@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "14.05.1990",
-    "id_number": "104-204",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  },
-  {
-    "full_name": "Сотрудник 5",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee5@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "15.06.1990",
-    "id_number": "105-205",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  },
-  {
-    "full_name": "Сотрудник 6",
-    "position": "Ведущий специалист‑эксперт",
-    "department": "Отдел экстренной цифровой поддержки",
-    "email": "employee6@gov.example",
-    "phone": "+7 (000) 000-00-00",
-    "birthdate": "16.07.1990",
-    "id_number": "106-206",
-    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
-    "photo": "assets/img/employees/placeholder.svg",
-    "id_card_img": "assets/img/employees/placeholder.svg"
-  }
-]</script>
+  <script id="employees-data" type="application/json">[{"full_name": "Фролова Александра Сергеевна", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "frolova.aleksandra94@gov.ru", "phone": "+7 (927) 071-17-72", "birthdate": "15.04.1994", "id_number": "142-217", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/frolova.jpg", "id_card_img": "assets/img/employees/frolova_id.jpg"}, {"full_name": "Купалов Виктор Николаевич", "position": "Специалист по защите персональных данных", "department": "Отдел экстренной цифровой поддержки", "email": "kupalov.viktor@gov.ru", "phone": "+7 (927) 071-17-71", "birthdate": "12.02.1990", "id_number": "ВН-740", "duties": "Профилактика и анализ инцидентов, связанных с утечкой персональных данных; консультирование граждан и организаций.", "photo": "assets/img/employees/kupalov.jpg", "id_card_img": "assets/img/employees/kupalov_id.jpg"}, {"full_name": "Сотрудник 3", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee3@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-203", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}, {"full_name": "Сотрудник 4", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee4@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-204", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}, {"full_name": "Сотрудник 5", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee5@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-205", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}, {"full_name": "Сотрудник 6", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee6@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-206", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}, {"full_name": "Сотрудник 7", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee7@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-207", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}, {"full_name": "Сотрудник 8", "position": "Ведущий специалист-эксперт", "department": "Отдел экстренной цифровой поддержки", "email": "employee8@gov.example", "phone": "+7 (000) 000-00-00", "birthdate": "01.01.1990", "id_number": "100-208", "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.", "photo": "assets/img/employees/placeholder.svg", "id_card_img": "assets/img/employees/placeholder.svg"}]</script>
   <script src="assets/js/employees.js"></script>
 </main>
   <footer class="footer">

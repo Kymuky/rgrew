@@ -6,10 +6,9 @@
   <title>Обращения граждан — Отдел №27</title>
   <link rel="icon" href="assets/img/ui/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="description" content="Официально-стилизованный учебный макет сайта «Отдел №27».">
 </head>
 <body>
-  
+
   <header class="header gov">
     <div class="container">
       <div class="topbar">
@@ -26,10 +25,11 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/></svg>
             <input type="search" placeholder="Поиск…" aria-label="Поиск">
           </div>
+          <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" onclick="toggleNav()">☰ Меню</button>
           <a class="btn secondary" href="services.html">Обратная связь</a>
         </div>
       </div>
-      <nav class="navline">
+      <nav id="mainnav" class="navline">
         <a href="index.html">Главная</a>
         <a href="about.html">Об отделе</a>
         <a href="news.html">Новости</a>
