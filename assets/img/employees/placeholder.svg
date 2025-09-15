@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="400" viewBox="0 0 320 400" role="img" aria-label="Фото сотрудника заглушка">
+  <rect width="320" height="400" fill="#e6eef9"/>
+  <circle cx="160" cy="150" r="60" fill="#c9d8f0"/>
+  <rect x="100" y="230" width="120" height="110" rx="16" fill="#c9d8f0"/>
+  <text x="160" y="370" font-family="Inter, Arial" font-size="16" text-anchor="middle" fill="#4267b2">Фото будет позже</text>
+</svg>

@@ -1,0 +1,98 @@
+[
+  {
+    "full_name": "Фролова Александра Сергеевна",
+    "position": "Ведущий специалист-эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "frolova.aleksandra94@gov.ru",
+    "phone": "+7 (927) 071-17-72",
+    "birthdate": "15.04.1994",
+    "id_number": "142-217",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/frolova.jpg",
+    "id_card_img": "assets/img/employees/frolova_id.jpg"
+  },
+  {
+    "full_name": "Купалов Виктор Николаевич",
+    "position": "Специалист по защите персональных данных",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "kupalov.viktor@gov.ru",
+    "phone": "+7 (927) 071-17-71",
+    "birthdate": "12.02.1990",
+    "id_number": "ВН-740",
+    "duties": "Профилактика и анализ инцидентов, связанных с утечкой персональных данных; консультирование граждан и организаций.",
+    "photo": "assets/img/employees/kupalov.jpg",
+    "id_card_img": "assets/img/employees/kupalov_id.jpg"
+  },
+  {
+    "full_name": "Сотрудник 1",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee1@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "11.02.1990",
+    "id_number": "101-201",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 2",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee2@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "12.03.1990",
+    "id_number": "102-202",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 3",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee3@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "13.04.1990",
+    "id_number": "103-203",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 4",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee4@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "14.05.1990",
+    "id_number": "104-204",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 5",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee5@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "15.06.1990",
+    "id_number": "105-205",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 6",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee6@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "16.07.1990",
+    "id_number": "106-206",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  }
+]

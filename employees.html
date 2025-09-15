@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сотрудники — Отдел №27</title>
+  <link rel="icon" href="assets/img/ui/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Официально-стилизованный учебный макет сайта «Отдел №27».">
+</head>
+<body>
+  
+  <header class="header gov">
+    <div class="container">
+      <div class="topbar">
+        <div class="brand">
+          <img class="logo" src="assets/img/ui/emblem.svg" alt="Эмблема">
+          <div class="titles">
+            <div class="title-main">Минцифры России — Отдел №27</div>
+            <div class="title-sub">Информационные технологии и цифровая поддержка</div>
+          </div>
+        </div>
+        <div class="rightbox">
+          <div class="hotline">Горячая линия: <a href="tel:+70000000000">+7 (000) 000‑00‑00</a></div>
+          <div class="search" role="search" aria-label="Поиск по сайту">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" placeholder="Поиск…" aria-label="Поиск">
+          </div>
+          <a class="btn secondary" href="services.html">Обратная связь</a>
+        </div>
+      </div>
+      <nav class="navline">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Об отделе</a>
+        <a href="news.html">Новости</a>
+        <a href="documents.html">Документы</a>
+        <a href="employees.html">Сотрудники</a>
+        <a href="services.html">Обращения граждан</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+  <div class="breadcrumbs"><a href="index.html">Главная</a> / Сотрудники</div>
+  <div class="card">
+    <h2 class="section-title">Состав отдела</h2>
+    <div id="emp-grid" class="grid cols-4"></div>
+    <div id="emp-modals"></div>
+  </div>
+  <script id="employees-data" type="application/json">[
+  {
+    "full_name": "Фролова Александра Сергеевна",
+    "position": "Ведущий специалист-эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "frolova.aleksandra94@gov.ru",
+    "phone": "+7 (927) 071-17-72",
+    "birthdate": "15.04.1994",
+    "id_number": "142-217",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/frolova.jpg",
+    "id_card_img": "assets/img/employees/frolova_id.jpg"
+  },
+  {
+    "full_name": "Купалов Виктор Николаевич",
+    "position": "Специалист по защите персональных данных",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "kupalov.viktor@gov.ru",
+    "phone": "+7 (927) 071-17-71",
+    "birthdate": "12.02.1990",
+    "id_number": "ВН-740",
+    "duties": "Профилактика и анализ инцидентов, связанных с утечкой персональных данных; консультирование граждан и организаций.",
+    "photo": "assets/img/employees/kupalov.jpg",
+    "id_card_img": "assets/img/employees/kupalov_id.jpg"
+  },
+  {
+    "full_name": "Сотрудник 1",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee1@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "11.02.1990",
+    "id_number": "101-201",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 2",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee2@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "12.03.1990",
+    "id_number": "102-202",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 3",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee3@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "13.04.1990",
+    "id_number": "103-203",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 4",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee4@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "14.05.1990",
+    "id_number": "104-204",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 5",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee5@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "15.06.1990",
+    "id_number": "105-205",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  },
+  {
+    "full_name": "Сотрудник 6",
+    "position": "Ведущий специалист‑эксперт",
+    "department": "Отдел экстренной цифровой поддержки",
+    "email": "employee6@gov.example",
+    "phone": "+7 (000) 000-00-00",
+    "birthdate": "16.07.1990",
+    "id_number": "106-206",
+    "duties": "Передаёт аналитические отчёты в другие подразделения, консультирует по безопасной повторной авторизации.",
+    "photo": "assets/img/employees/placeholder.svg",
+    "id_card_img": "assets/img/employees/placeholder.svg"
+  }
+]</script>
+  <script src="assets/js/employees.js"></script>
+</main>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="small">© 2025 Отдел №27. Последнее обновление: <span data-last-updated></span></div>
+        <div class="small">Этот сайт — учебный макет для курсовой работы и не является официальным ресурсом.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

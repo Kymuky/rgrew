@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Приёмная;Отдел №27;;;
+FN:Отдел №27 — Приёмная
+ORG:Отдел №27
+TEL;TYPE=voice,work:+7-000-000-00-00
+EMAIL;TYPE=work:reception@example.gov
+ADR;TYPE=work:;;г. Москва, ул. Примерная, д. 1;Москва;;101000;Россия
+URL:https://example.gov
+END:VCARD
